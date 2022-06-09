@@ -1,0 +1,564 @@
+@font-face {
+    font-family: Mohr;
+    src: url("../assets/fonts/Mohr.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Mohr;
+}
+
+body {
+    background-color: black;
+}
+
+#grilla {
+    display: grid;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100%;
+    grid-area: header;
+
+}
+
+nav {
+    display: inline-block;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(84, 99, 164);
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+nav ul li a:hover {
+    color: rgba(255, 255, 255);
+}
+
+#logo {
+    margin-left: 15px;
+}
+
+#menuNavegacion {
+    margin-right: 15px;
+}
+
+.principal__titulo--centradostrong {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(98, 98, 98);
+}
+
+.principal_subtitulo--centradoitalic {
+    text-align: center;
+    font-style: italic;
+    margin-top: 15px;
+    color: rgb(84, 99, 164);
+}
+
+.mision__titulo--uppercase_color_size,
+.vision__titulo_uppercase_color_size,
+.planes__titulo--uppercase_color_size {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(84, 99, 164);
+}
+
+.mision__parrafo--color,
+.vision__parrafo--color {
+    text-align: justify;
+    color: rgb(98, 98, 98);
+}
+
+
+#mision,
+#vision {
+    width: 400px;
+}
+
+#quienesSomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textoEmpresa {
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+    grid-area: textoempresa;
+}
+
+footer {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+    grid-area: footer;
+}
+
+#quienesSomos {
+    grid-area: somos;
+}
+
+#misionVision {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-area: mision;
+}
+
+#mb50,
+#mb100,
+#mb300 {
+    width: 250px;
+}
+
+#planesMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    grid-area: planesmain;
+}
+
+
+.planes__50mb--sizeback {
+    width: 250px;
+}
+
+div ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+div ul li {
+    color: rgb(98, 98, 98);
+}
+
+div ul li a {
+    text-decoration: none;
+    color: rgb(84, 99, 164)
+}
+
+div ul li a:hover {
+    color: white;
+}
+#pie__izq {
+    margin-left: 70px;
+}
+#pie__centro {
+    margin-left: 47px;
+}
+#pie__der {
+    margin-right: 30px;
+}
+
+.empresa--parrafo, .cobertura--titulo, .cobertura__pie--parrafo {
+    margin-top: 10px;
+    padding: 15px;
+    font-weight: bolder;
+}
+
+.cobertura--titulo, .cobertura__pie--parrafo {
+    color: rgb(98, 98, 98);
+    text-align: center;
+}
+
+.empresa--parrafo {
+    color: rgb(98, 98, 98);
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+#planesmegas {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.planestext {
+    color: rgb(84, 99, 164);
+    text-align: center;
+    margin-top: 5px;
+}
+
+orm {
+    margin-top: 15px;
+    padding: 15px;
+}
+
+form fieldset legend {
+    color: rgb(84, 99, 164);
+    padding: 15px;
+}
+
+form fieldset label {
+    color: rgb(98, 98, 98);
+    padding: 3px;
+}
+
+form fieldset input {
+    width: 235px;
+    padding: 3px;
+}
+
+form fieldset textarea {
+    width: 100%;
+}
+
+#buttons {
+    text-align: center;
+}
+
+.imgplanes {
+    height: 80px;
+}
+
+#grillaEmpresa {
+    display: grid;
+}
+
+#grillaPlanes, #planesInternet {
+    display: grid;
+}
+
+#planesInternet {
+    grid-area: planesinet;
+}
+
+#grillaCobertura {
+    display: grid;
+}
+
+#principal__cobertura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: cobertura;
+
+}
+
+.servicio50 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: servicio50;
+}
+
+.servicio100 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: servicio100;
+}
+
+.servicio300 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: servicio300;
+}
+
+#grillaContacto {
+    display: grid;
+}
+
+#principal__contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: contact;
+}
+
+form input, form select, form textarea{
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+  input[type=submit], input[type=reset] {
+    background-color: rgb(84, 99, 164);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+form  fieldset {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+@media (min-width: 1024px) {
+    #grilla {
+        grid-template-columns: auto;
+        grid-template-rows: 10% auto auto auto 20%;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header""somos""mision""planesmain""footer";
+    }
+
+    #grillaEmpresa {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header" "textoempresa" "footer";
+    }
+
+    #grillaPlanes {
+        grid-template-columns: auto;
+        grid-template-rows: 10% auto auto auto 20%;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header""planesinet" "footer";
+    }
+    #planesInternet {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "servicio50""servicio100" "servicio300";
+    }
+
+    #grillaCobertura {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header""cobertura" "footer";
+    }
+
+    #grillaContacto {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header""contact" "footer";
+    }
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    #grilla {
+        grid-template-columns: auto;
+        grid-template-rows: 10% auto auto auto 20%;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header""somos""mision""planesmain""footer";
+    }
+
+    #mb50,
+    #mb100,
+    #mb300 {
+        width: 150px;
+    }
+
+    .planes__50mb--sizeback {
+        width: 150px;
+    }
+
+    #mision,
+    #vision {
+        width: 300px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+
+    }
+
+    .principal_subtitulo--centradoitalic {
+        font-size: 16px;
+    }
+
+    footer ul li {
+        font-size: 12px;
+    }
+
+    #grillaEmpresa {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header" "textoempresa" "footer";
+    }
+
+    #textoEmpresa p {
+        font-size: 16px;
+    }
+
+    #grillaPlanes {
+        grid-template-columns: auto;
+        grid-template-rows: 10% auto auto auto 20%;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header""planesinet" "footer";
+    }
+    #planesInternet {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "servicio50""servicio100" "servicio300";
+    }
+
+    #grillaCobertura {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header""cobertura" "footer";
+    }
+
+    #grillaContacto {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header""contact" "footer";
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+    #grilla {
+        grid-template-columns: auto;
+        grid-template-rows: 10% auto auto auto 20%;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header""somos""mision""planesmain""footer";
+    }
+
+    header {
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: center;
+    
+    }
+
+    #planesMain {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 50px;
+    } 
+    
+    #misionVision {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 50px;
+
+    }   
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 50px;
+    }
+    #pie__izq {
+        margin-left: 0;
+    }
+    #pie__centro {
+        margin-left: 0;
+    }
+    #pie__der {
+        margin-right: 0;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    nav ul li {
+        padding: 3px;
+    }
+
+    #menuNavegacion {
+        margin-right: 0;
+    }
+
+    #grillaEmpresa {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header" "textoempresa" "footer";
+    }
+
+    #grillaPlanes {
+        grid-template-columns: auto;
+        grid-template-rows: 10% auto auto auto 20%;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header""planesinet" "footer";
+    }
+    #planesInternet {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "servicio50""servicio100" "servicio300";
+    }
+
+    .servicio50, .servicio100, .servicio300 {
+        flex-direction: column;    
+    }
+    
+    #grillaCobertura {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header""cobertura" "footer";
+    }
+
+    .mymaps {
+        width: 300px;
+        height: 300px;
+    }
+
+    #principal__cobertura {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    #grillaContacto {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header""contact" "footer";
+    }
+
+}
