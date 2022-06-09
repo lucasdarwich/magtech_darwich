@@ -9,6 +9,16 @@
     font-family: Mohr;
 }
 
+.color {
+    animation: color 1s alternate infinite;
+}
+
+@keyframes color {
+    form {color: #8607FE;}
+    to {color: #00FFAB;}
+}
+
+
 body {
     background-color: black;
 }
@@ -49,9 +59,36 @@ nav ul li a {
 
 }
 
-nav ul li a:hover {
+/* nav ul li a:hover {
     color: rgba(255, 255, 255);
+} */
+
+.titulo--animado
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  
+  font-size: 48px;
+}   
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
+
 
 #logo {
     margin-left: 15px;
