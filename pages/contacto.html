@@ -5,30 +5,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>MAG Tech - Contacto</title>
 </head>
 
 <body>
-    <div id="grillaContacto">
+    <div>
         <header>
-            <div id="logo">
-                <img src="../assets/images/magtechlogo.png" class="logo__foto--padding"
-                    alt="MAG Tech - Internet de Calidad">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <nav class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                            <img src="../assets/images/magtechlogo.png"
+                                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto"
+                                alt="MAG Tech - Internet de Calidad">
+                            <ul class="nav">
+                                <li class="nav-item"><a href="../index.html">Home</a></li>
+                                <li class="nav-item"><a href="./empresa.html">Empresa</a></li>
+                                <li class="nav-item"><a href="./planes.html">Planes</a></li>
+                                <li class="nav-item"><a href="./cobertura.html">Cobertura</a>
+                                </li>
+                                <li class="nav-item"><a href="./contacto.html">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
-            <nav id="menuNavegacion">
-                <ul>
-                    <li><a href="../index.html" class="color">Home</a></li>
-                    <li><a href="./empresa.html" class="color">Empresa</a></li>
-                    <li><a href="./planes.html" class="color">Planes</a></li>
-                    <li><a href="./cobertura.html" class="color">Cobertura</a></li>
-                    <li><a href="./contacto.html"class="color">Contacto</a></li>
-                </ul>
-            </nav>
         </header>
 
         <section id="principal__contacto">
-            <h1 class="principal__contacto--titulo">Formulaio de Contacto</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <h1 class="principal__contacto--titulo">Formulaio de Contacto</h1>
+                    </div>
+                    <form action="#" method="GET" enctype="multipart/form-data" class="row g-3">
+                        <div class="col-md-4">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="lastName" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="lastName" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="correoElectronico" class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="correoElectronico" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="telNumber" class="form-label">Telefono</label>
+                            <input type="tel" class="form-control" id="telNumber" required>
+                        </div>
+                        <div class="col-md-8">
+                            <label for="motivoContact" class="form-label">Motivo de Contacto</label>
+                            <select class="form-select" id="motivoContact" required>
+                                <option selected>Seleccionar...</option>
+                                <option value="rtech">Reclamo Técnico</option>
+                                <option value="radm">Reclamo Administrativo</option>
+                                <option value="rfact">Reclamo Facturación</option>
+                                <option value="alta">Alta de Servicio</option>
+                                <option value="baja">Baja de Servicio</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="comentarios" class="form-label">Escriba su consulta</label>
+                            <textarea class="form-control" id="comentarios" rows="10" required></textarea>
+                          </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="reset" class="btn btn-primary">Limpiar Formulario</button>
+                        </div>
+                    </form>
+
+
+
+                    <!--      <h1 class="principal__contacto--titulo">Formulaio de Contacto</h1>
             <form action="#" method="GET" enctype="multipart/form-data">
                 <fieldset>
                     <legend>Datos del Usuario</legend>
@@ -63,37 +116,48 @@
                     <input class="send" type="submit" name="enviar" value="Enviar">
                     <input class="reset" type="reset" name="reset" value="Borrar Formulario">
                 </div>
-            </form>
+            </form> -->
+                </div>
+            </div>
         </section>
 
         <footer id="pie">
-            <div id="pie__izq">
-                <ul>
-                    <li>ACERDA DE</li>
-                    <li><a href="./empresa.html">Empresa</a></li>
-                    <li><a href="#">Equipo</a></li>
-                    <li><a href="#">Sustentabilidad</a></li>
-                </ul>
-            </div>
-            <div id="pie__centro">
-                <ul>
-                    <li>ASISTENCIA</li>
-                    <li>Atención al cliente: 0800-XXX-XXXX</li>
-                    <li>Problemas Técnicos: 0800-XXX-XXXX</li>
-                    <li>Facturación: <a href="mailto:facturacion@magtech.com.ar">facturacion@magtech.com.ar</a></li>
-                </ul>
-            </div>
-            <div id="pie__der">
-                <ul>
-                    <li>RECLAMOS</li>
-                    <li><a href="mailto:reclamos@magtech.com.ar">reclamos@magtech.com.ar</a></li>
-                    <li><a href="contacto.html">Solicitar Baja del Servicio</a></li>
-                    <li><a href="https://www.enacom.gob.ar/reclamos-de-telefonia-fija-movil-internet-cable-tv-y-postales_p1000"
-                            target="_blank">ENACOM</a></li>
-                </ul>
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="pie__izq" class="col-sm-12 col-md-4 col-lg-4 px-4">
+                        <ul>
+                            <li class="footer__texto--color">ACERDA DE</li>
+                            <li><a href="./empresa.html">Empresa</a></li>
+                            <li><a href="#">Equipo</a></li>
+                            <li><a href="#">Sustentabilidad</a></li>
+                        </ul>
+                    </div>
+                    <div id="pie__centro" class="col-sm-12 col-md-4 col-lg-4 px-4">
+                        <ul>
+                            <li class="footer__texto--color">ASISTENCIA</li>
+                            <li class="footer__texto--color">Atención al cliente: 0800-XXX-XXXX</li>
+                            <li class="footer__texto--color">Problemas Técnicos: 0800-XXX-XXXX</li>
+                            <li class="footer__texto--color">Facturación: <a
+                                    href="mailto:facturacion@magtech.com.ar">facturacion@magtech.com.ar</a></li>
+                        </ul>
+                    </div>
+                    <div id="pie__der" class="col-sm-12 col-md-4 col-lg-4 px-4">
+                        <ul>
+                            <li class="footer__texto--color">RECLAMOS</li>
+                            <li><a href="mailto:reclamos@magtech.com.ar">reclamos@magtech.com.ar</a></li>
+                            <li><a href="./contacto.html">Solicitar Baja del Servicio</a></li>
+                            <li><a href="https://www.enacom.gob.ar/reclamos-de-telefonia-fija-movil-internet-cable-tv-y-postales_p1000"
+                                    target="_blank">ENACOM</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

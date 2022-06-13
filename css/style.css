@@ -9,37 +9,33 @@
     font-family: Mohr;
 }
 
-.color {
+/* .color {
     animation: color 1s alternate infinite;
 }
 
 @keyframes color {
     form {color: #8607FE;}
     to {color: #00FFAB;}
-}
+} */
 
 
 body {
-    background-color: black;
+    background-color: whitesmoke;
 }
-
+/* 
 #grilla {
     display: grid;
 }
-
+ */
 header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    background-color: rgb(98, 98, 98);
     margin-bottom: 10px;
     width: 100%;
-    grid-area: header;
-
 }
 
 nav {
     display: inline-block;
+    width: 100%;
 }
 
 nav ul {
@@ -53,17 +49,145 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(84, 99, 164);
+    color: rgb(22, 42, 131);
     font-size: 20px;
     font-weight: bold;
 
 }
 
-/* nav ul li a:hover {
+ nav ul li a:hover {
     color: rgba(255, 255, 255);
-} */
+} 
 
-.titulo--animado
+.principal__titulo--centradostrong {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bolder;
+    color: rgb(22, 42, 131);
+}
+
+.principal_subtitulo--centradoitalic {
+    text-align: center;
+    font-style: italic;
+    margin-top: 15px;
+    color: rgb(98, 98, 98);
+}
+
+#misionVision {
+    margin-top: 50px;
+}
+
+.mision__titulo--uppercase_color_size,
+.vision__titulo_uppercase_color_size,
+.planes__titulo--uppercase_color_size {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(22, 42, 131);
+}
+
+.mision__parrafo--color,
+.vision__parrafo--color {
+    text-align: justify;
+    color: rgb(98, 98, 98);
+}
+
+#planesMain {
+    margin-top: 50px;
+}
+
+.backgroud--transparente {
+    background-color: transparent;
+    border: 0px;
+}
+
+.card ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.card ul li {
+    color: rgb(98, 98, 98);
+}
+
+.card ul li a {
+    text-decoration: none;
+    color: rgb(22, 42, 131)
+}
+
+.card ul li a:hover {
+    color: rgb(12, 90, 46);
+}
+
+.card-body h5 {
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(98, 98, 98);
+    margin-top: 15px;
+}
+
+.footer__texto--color {
+    color: whitesmoke;
+}
+
+#pie__izq, #pie__centro, #pie__der, ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#pie__izq, #pie__centro, #pie__der, ul li {
+    color: rgb(98, 98, 98);
+}
+
+#pie__izq, #pie__centro, #pie__der, ul li a {
+    text-decoration: none;
+    color: rgb(22, 42, 131)
+}
+
+#pie__izq, #pie__centro, #pie__der, ul li a:hover {
+    color: rgb(12, 90, 46);
+}
+
+.empresa--parrafo {
+    margin-top: 10px;
+    text-align: justify;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#planesInternet {
+    margin-top: 30px;
+}
+
+#mb50 .card-title {
+    color: rgb(22, 42, 131);
+}
+
+.cobertura--titulo, .principal__contacto--titulo {
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(22, 42, 131);
+    padding: 15px;
+    font-weight: bolder;
+}
+
+.cobertura__pie--parrafo {
+    color: rgb(98, 98, 98);
+    text-align: center;
+    margin-top: 10px;
+    padding: 15px;
+    font-weight: bolder;
+}
+
+.mymaps {
+    margin: 0 auto;
+    display: block;
+}  
+/* .titulo--animado
 {
    text-transform: uppercase;
   background-image: linear-gradient(
@@ -81,15 +205,15 @@ nav ul li a {
   animation: textclip 2s linear infinite;
   
   font-size: 48px;
-}   
+}    */
 
-@keyframes textclip {
+/* @keyframes textclip {
   to {
     background-position: 200% center;
   }
 }
-
-
+ */
+/* 
 #logo {
     margin-left: 15px;
 }
@@ -98,27 +222,8 @@ nav ul li a {
     margin-right: 15px;
 }
 
-.principal__titulo--centradostrong {
-    text-align: center;
-    margin-top: 20px;
-    color: rgb(98, 98, 98);
-}
 
-.principal_subtitulo--centradoitalic {
-    text-align: center;
-    font-style: italic;
-    margin-top: 15px;
-    color: rgb(84, 99, 164);
-}
 
-.mision__titulo--uppercase_color_size,
-.vision__titulo_uppercase_color_size,
-.planes__titulo--uppercase_color_size {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    text-align: center;
-    color: rgb(84, 99, 164);
-}
 
 .mision__parrafo--color,
 .vision__parrafo--color {
@@ -156,30 +261,24 @@ footer {
     grid-area: somos;
 }
 
-#misionVision {
-    display: flex;
-    margin-top: 50px;
-    flex-direction: row;
-    justify-content: space-around;
-    grid-area: mision;
-}
-
+ */
+/* 
 #mb50,
 #mb100,
 #mb300 {
     width: 250px;
-}
+} */
 
-#planesMain {
+/* #planesMain {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 50px;
     grid-area: planesmain;
 }
+ */
 
-
-.planes__50mb--sizeback {
+/* .planes__50mb--sizeback {
     width: 250px;
 }
 
@@ -199,8 +298,8 @@ div ul li a {
 
 div ul li a:hover {
     color: white;
-}
-#pie__izq {
+} */
+/* #pie__izq {
     margin-left: 70px;
 }
 #pie__centro {
@@ -261,8 +360,8 @@ form fieldset input {
 form fieldset textarea {
     width: 100%;
 }
-
-#buttons {
+ */
+/* #buttons {
     text-align: center;
 }
 
@@ -348,9 +447,9 @@ form  fieldset {
       display: flex;
       flex-direction: column;
       align-items: center;
-  }
+  } */
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
     #grilla {
         grid-template-columns: auto;
         grid-template-rows: 10% auto auto auto 20%;
@@ -598,4 +697,11 @@ form  fieldset {
         grid-template-areas: "header""contact" "footer";
     }
 
+} */
+
+
+@media (min-width: 320px) and (max-width: 576px) {
+    .mymaps {
+        width: 300px;
+    }
 }
