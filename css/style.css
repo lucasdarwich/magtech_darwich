@@ -1,216 +1,229 @@
 @font-face {
-    font-family: Mohr;
-    src: url("../assets/fonts/Mohr.ttf");
+  font-family: Mohr;
+  src: url("../assets/fonts/Mohr.ttf");
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    font-family: Mohr;
+  padding: 0;
+  margin: 0;
+  font-family: Mohr;
 }
 
 .color {
-    animation: color 1s alternate infinite;
+  -webkit-animation: color 1s alternate infinite;
+          animation: color 1s alternate infinite;
+}
+
+@-webkit-keyframes color {
+  form {
+    color: #162a83;
+  }
+  to {
+    color: #f4b802;
+  }
 }
 
 @keyframes color {
-    form {color: rgb(22, 42, 131);}
-    to {color: #f4b802;}
+  form {
+    color: #162a83;
+  }
+  to {
+    color: #f4b802;
+  }
 }
 
-
 body {
-    background-color: whitesmoke;
+  background-color: whitesmoke;
 }
 
 header {
-    background-color: rgb(98, 98, 98);
-    margin-bottom: 10px;
-    width: 100%;
+  background-color: #626262;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 nav {
-    display: inline-block;
-    width: 100%;
+  display: inline-block;
+  width: 100%;
 }
 
 nav ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 nav ul li {
-    display: inline;
-    padding: 10px;
+  display: inline;
+  padding: 10px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: rgb(22, 42, 131);
-    font-size: 20px;
-    font-weight: bold;
-
+  text-decoration: none;
+  color: #162a83;
+  font-size: 20px;
+  font-weight: bold;
 }
 
- nav ul li a:hover {
-    color: rgba(255, 255, 255);
-} 
+nav ul li a:hover {
+  color: white;
+}
 
 .principal__titulo--centradostrong {
-    text-align: center;
-    margin-top: 20px;
-    font-weight: bolder;
-    color: rgb(22, 42, 131);
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bolder;
+  color: #162a83;
 }
 
 .principal_subtitulo--centradoitalic {
-    text-align: center;
-    font-style: italic;
-    margin-top: 15px;
-    color: rgb(98, 98, 98);
+  text-align: center;
+  font-style: italic;
+  margin-top: 15px;
+  color: #626262;
 }
 
 #misionVision {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .mision__titulo--uppercase_color_size,
 .vision__titulo_uppercase_color_size,
 .planes__titulo--uppercase_color_size {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: center;
-    color: rgb(22, 42, 131);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #162a83;
 }
 
 .mision__parrafo--color,
 .vision__parrafo--color {
-    text-align: justify;
-    color: rgb(98, 98, 98);
+  text-align: justify;
+  color: #626262;
 }
 
 #planesMain {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .backgroud--transparente {
-    background-color: transparent;
-    border: 0px;
+  background-color: transparent;
+  border: 0px;
 }
 
 .card ul {
-    list-style-type: none;
-    text-align: center;
+  list-style-type: none;
+  text-align: center;
 }
 
 .card ul li {
-    color: rgb(98, 98, 98);
+  color: #626262;
 }
 
 .card ul li a {
-    text-decoration: none;
-    color: rgb(22, 42, 131)
+  text-decoration: none;
+  color: #162a83;
 }
 
 .card ul li a:hover {
-    color: rgb(12, 90, 46);
+  color: #0c5a2e;
 }
 
 .card-body h5 {
-    text-align: center;
+  text-align: center;
 }
 
 footer {
-    background-color: rgb(98, 98, 98);
-    margin-top: 15px;
+  background-color: #626262;
+  margin-top: 15px;
 }
 
 .footer__texto--color {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
 #pie__izq, #pie__centro, #pie__der, ul {
-    list-style-type: none;
-    text-align: center;
+  list-style-type: none;
+  text-align: center;
 }
 
 #pie__izq, #pie__centro, #pie__der, ul li {
-    color: rgb(98, 98, 98);
+  color: #626262;
 }
 
 #pie__izq, #pie__centro, #pie__der, ul li a {
-    text-decoration: none;
-    color: rgb(22, 42, 131)
+  text-decoration: none;
+  color: #162a83;
 }
 
 #pie__izq, #pie__centro, #pie__der, ul li a:hover {
-    color: rgb(12, 90, 46);
+  color: #0c5a2e;
 }
 
 .empresa--parrafo {
-    margin-top: 10px;
-    text-align: justify;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: bolder;
+  margin-top: 10px;
+  text-align: justify;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bolder;
 }
 
 #planesInternet {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 #mb50 .card-title {
-    color: rgb(22, 42, 131);
+  color: #162a83;
 }
 
 .cobertura--titulo, .principal__contacto--titulo {
-    text-align: center;
-    margin-top: 10px;
-    color: rgb(22, 42, 131);
-    padding: 15px;
-    font-weight: bolder;
+  text-align: center;
+  margin-top: 10px;
+  color: #162a83;
+  padding: 15px;
+  font-weight: bolder;
 }
 
 .cobertura__pie--parrafo {
-    color: rgb(98, 98, 98);
-    text-align: center;
-    margin-top: 10px;
-    padding: 15px;
-    font-weight: bolder;
+  color: #626262;
+  text-align: center;
+  margin-top: 10px;
+  padding: 15px;
+  font-weight: bolder;
 }
 
 .mymaps {
-    margin: 0 auto;
-    display: block;
-}  
-.titulo--animado
-{
-   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
+  margin: 0 auto;
+  display: block;
+}
+
+.titulo--animado {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  
+  -webkit-animation: textclip 2s linear infinite;
+          animation: textclip 2s linear infinite;
   font-size: 48px;
-}    
+}
 
- @keyframes textclip {
+@-webkit-keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes textclip {
   to {
     background-position: 200% center;
   }
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
-    .mymaps {
-        width: 300px;
-    }
+  .mymaps {
+    width: 300px;
+  }
 }
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,210 @@
+@import "variables/variables";
+
+@font-face {
+    font-family: Mohr;
+    src: url("../assets/fonts/Mohr.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Mohr;
+}
+
+.color {
+    animation: color 1s alternate infinite;
+}
+
+@keyframes color {
+    form {color: $blueColor;}
+    to {color: #f4b802;}
+}
+
+
+body {
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: $grayColor;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+    ul {
+        list-style-type: none;
+        li {
+            display: inline;
+            padding: 10px;
+            a {
+                text-decoration: none;
+                color: $blueColor;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            a:hover {
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+}
+
+.principal__titulo--centradostrong {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bolder;
+    color: $blueColor;
+}
+
+.principal_subtitulo--centradoitalic {
+    text-align: center;
+    font-style: italic;
+    margin-top: 15px;
+    color: $grayColor;
+}
+
+#misionVision {
+    margin-top: 50px;
+}
+
+.mision__titulo--uppercase_color_size,
+.vision__titulo_uppercase_color_size,
+.planes__titulo--uppercase_color_size {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: $blueColor;
+}
+
+.mision__parrafo--color,
+.vision__parrafo--color {
+    text-align: justify;
+    color: $grayColor;
+}
+
+#planesMain {
+    margin-top: 50px;
+}
+
+.backgroud--transparente {
+    background-color: transparent;
+    border: 0px;
+}
+
+.card ul {
+    list-style-type: none;
+    text-align: center;
+    li {
+        color: $grayColor;
+        a{
+            text-decoration: none;
+            color: $blueColor;
+        }
+        a:hover {
+            color: rgb(12, 90, 46);
+        }
+    }
+}
+
+.card-body h5 {
+    text-align: center;
+}
+
+footer {
+    background-color: $grayColor;
+    margin-top: 15px;
+}
+
+.footer__texto--color {
+    color: whitesmoke;
+}
+
+#pie__izq, #pie__centro, #pie__der, ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#pie__izq, #pie__centro, #pie__der, ul li {
+    color: $grayColor;
+}
+
+#pie__izq, #pie__centro, #pie__der, ul li a {
+    text-decoration: none;
+    color: $blueColor;
+}
+
+#pie__izq, #pie__centro, #pie__der, ul li a:hover {
+    color: rgb(12, 90, 46);
+}
+
+.empresa--parrafo {
+    margin-top: 10px;
+    text-align: justify;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#planesInternet {
+    margin-top: 30px;
+}
+
+#mb50 .card-title {
+    color: $blueColor;
+}
+
+.cobertura--titulo, .principal__contacto--titulo {
+    text-align: center;
+    margin-top: 10px;
+    color: $blueColor;
+    padding: 15px;
+    font-weight: bolder;
+}
+
+.cobertura__pie--parrafo {
+    color: $grayColor;
+    text-align: center;
+    margin-top: 10px;
+    padding: 15px;
+    font-weight: bolder;
+}
+
+.mymaps {
+    margin: 0 auto;
+    display: block;
+}  
+.titulo--animado
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  
+  font-size: 48px;
+}    
+
+ @keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+    .mymaps {
+        width: 300px;
+    }
+}
