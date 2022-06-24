@@ -27,6 +27,7 @@ body {
 
 header {
     background-color: $grayColor;
+    opacity: .9;
     margin-bottom: 10px;
     width: 100%;
 }
@@ -77,12 +78,13 @@ nav {
     font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
+    margin-bottom: 25px;
     color: $blueColor;
 }
 
 .mision__parrafo--color,
 .vision__parrafo--color {
-    text-align: justify;
+    text-align: center;
     color: $grayColor;
 }
 
@@ -111,8 +113,13 @@ nav {
     }
 }
 
-.card-body h5 {
-    text-align: center;
+.card-body {
+    h5 {
+        text-align: center;
+    }
+    ul {
+        padding: 0;
+    }
 }
 
 footer {
@@ -139,7 +146,7 @@ footer {
 }
 
 #pie__izq, #pie__centro, #pie__der, ul li a:hover {
-    color: rgb(12, 90, 46);
+    color: $whiteColor;
 }
 
 .empresa--parrafo {
@@ -204,8 +211,44 @@ footer {
   }
 }
 
-@media (min-width: 320px) and (max-width: 576px) {
+#mision, #vision {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#visionimg, #misionimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi-wifi, .bi-telephone-inbound, .bi-badge-4k {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 72px;
+    color: $blueColor;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
     .mymaps {
         width: 300px;
+    }
+
+    #visionimg, #misionimg {
+        display: none;
+    }
+    .nav {
+        justify-content: center;
+        align-items: center;
+    }
+    .principal__titulo--centradostrong {
+        font-size: 32px;
+    }
+    .principal_subtitulo--centradoitalic {
+        font-size: 24px;
     }
 }

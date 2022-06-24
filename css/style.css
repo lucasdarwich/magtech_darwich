@@ -38,6 +38,7 @@ body {
 
 header {
   background-color: #626262;
+  opacity: .9;
   margin-bottom: 10px;
   width: 100%;
 }
@@ -92,12 +93,13 @@ nav ul li a:hover {
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
+  margin-bottom: 25px;
   color: #162a83;
 }
 
 .mision__parrafo--color,
 .vision__parrafo--color {
-  text-align: justify;
+  text-align: center;
   color: #626262;
 }
 
@@ -132,6 +134,10 @@ nav ul li a:hover {
   text-align: center;
 }
 
+.card-body ul {
+  padding: 0;
+}
+
 footer {
   background-color: #626262;
   margin-top: 15px;
@@ -156,7 +162,7 @@ footer {
 }
 
 #pie__izq, #pie__centro, #pie__der, ul li a:hover {
-  color: #0c5a2e;
+  color: white;
 }
 
 .empresa--parrafo {
@@ -221,9 +227,70 @@ footer {
   }
 }
 
-@media (min-width: 320px) and (max-width: 576px) {
+#mision, #vision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#visionimg, #misionimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bi-wifi, .bi-telephone-inbound, .bi-badge-4k {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 72px;
+  color: #162a83;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
   .mymaps {
     width: 300px;
+  }
+  #visionimg, #misionimg {
+    display: none;
+  }
+  .nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .principal__titulo--centradostrong {
+    font-size: 32px;
+  }
+  .principal_subtitulo--centradoitalic {
+    font-size: 24px;
   }
 }
 /*# sourceMappingURL=style.css.map */
