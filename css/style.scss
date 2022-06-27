@@ -1,4 +1,6 @@
 @import "variables/variables";
+@import "./extend/extend";
+@import "./mixin/mixin";
 
 @font-face {
     font-family: Mohr;
@@ -11,22 +13,12 @@
     font-family: Mohr;
 }
 
-.color {
-    animation: color 1s alternate infinite;
-}
-
-@keyframes color {
-    form {color: $blueColor;}
-    to {color: #f4b802;}
-}
-
-
 body {
     background-color: whitesmoke;
 }
 
 header {
-    background-color: $grayColor;
+    background-color: map-get($colores, $key: gris );
     opacity: .9;
     margin-bottom: 10px;
     width: 100%;
@@ -42,7 +34,7 @@ nav {
             padding: 10px;
             a {
                 text-decoration: none;
-                color: $blueColor;
+                color: map-get($colores, $key: azul );
                 font-size: 20px;
                 font-weight: bold;
                     &:hover {
@@ -57,14 +49,14 @@ nav {
     text-align: center;
     margin-top: 20px;
     font-weight: bolder;
-    color: $blueColor;
+    color: map-get($colores, $key: azul );
 }
 
 .principal_subtitulo--centradoitalic {
     text-align: center;
     font-style: italic;
     margin-top: 15px;
-    color: $grayColor;
+    color: map-get($colores, $key: gris );
 }
 
 #misionVision {
@@ -74,18 +66,17 @@ nav {
 .mision__titulo--uppercase_color_size,
 .vision__titulo_uppercase_color_size,
 .planes__titulo--uppercase_color_size {
-    text-transform: uppercase;
-    font-size: 1.5rem;
+    @extend .uppercase;
+    @include fuente(center,1.5rem);
     font-weight: 600;
-    text-align: center;
     margin-bottom: 25px;
-    color: $blueColor;
+    color: map-get($colores, $key: azul );
 }
 
 .mision__parrafo--color,
 .vision__parrafo--color {
     text-align: center;
-    color: $grayColor;
+    color: map-get($colores, $key: gris );;
 }
 
 #planesMain {
@@ -101,10 +92,10 @@ nav {
     list-style-type: none;
     text-align: center;
     li {
-        color: $grayColor;
+        color: map-get($colores, $key: gris );
         a{
             text-decoration: none;
-            color: $blueColor;
+            color: map-get($colores, $key: azul );
                 &:hover {
                     color: rgb(12, 90, 46);
                 }
@@ -123,7 +114,7 @@ nav {
 }
 
 footer {
-    background-color: $grayColor;
+    background-color: map-get($colores, $key: gris );
     margin-top: 15px;
 }
 
@@ -131,30 +122,26 @@ footer {
     color: whitesmoke;
 }
 
-#pie__izq, #pie__centro, #pie__der, ul {
+#pie__izq, #pie__centro, #pie__der, ul 
+{
     list-style-type: none;
     text-align: center;
     padding: 0;
-}
-
-#pie__izq, #pie__centro, #pie__der, ul li {
-    color: $grayColor;
-}
-
-#pie__izq, #pie__centro, #pie__der, ul li a {
-    text-decoration: none;
-    color: $blueColor;
-}
-
-#pie__izq, #pie__centro, #pie__der, ul li a:hover {
-    color: $whiteColor;
+    li {
+        color: map-get($colores, $key: blacno );
+    }
+    a {
+        text-decoration: none;
+        color: map-get($colores, $key: azul );
+        &:hover {
+            color: map-get($colores, $key: blanco );
+        }
+    }
 }
 
 .empresa--parrafo {
-    margin-top: 10px;
-    text-align: justify;
-    padding: 10px;
-    font-size: 18px;
+    @include fuente(justify,20px);
+    @include marginTopPadd(10px,10px);
     font-weight: bolder;
 }
 
@@ -162,23 +149,21 @@ footer {
     margin-top: 30px;
 }
 
-#mb50 .card-title {
-    color: $blueColor;
+.card-title {
+    color: map-get($colores, $key: azul );
 }
 
 .cobertura--titulo, .principal__contacto--titulo {
+    @include marginTopPadd(10px,15px); 
     text-align: center;
-    margin-top: 10px;
-    color: $blueColor;
-    padding: 15px;
+    color: map-get($colores, $key: azul );
     font-weight: bolder;
 }
 
 .cobertura__pie--parrafo {
-    color: $grayColor;
+    @include marginTopPadd(10px,15px);
+    color: map-get($colores, $key: gris );;
     text-align: center;
-    margin-top: 10px;
-    padding: 15px;
     font-weight: bolder;
 }
 
@@ -188,8 +173,8 @@ footer {
 }  
 .titulo--animado
 {
-   text-transform: uppercase;
-  background-image: linear-gradient(
+    @extend .uppercase;
+    background-image: linear-gradient(
     -225deg,
     #231557 0%,
     #44107a 29%,
@@ -212,54 +197,43 @@ footer {
   }
 }
 
-#mision, #vision {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+#visionimg, #misionimg {
+    @extend .display--flex;
 }
 
-#visionimg, #misionimg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#mision, #vision {
+    @extend .display--flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
 .bi-wifi, .bi-telephone-inbound, .bi-badge-4k {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend .display--flex;
     font-size: 72px;
-    color: $blueColor;
+    color: map-get($colores, $key: azul );
 }
 
 .bi-router, .bi-box-arrow-in-up, .bi-box-arrow-in-down, .bi-telephone, .bi-tv, .bi-modem, .bi-ui-checks-grid, .bi-tv {
-    color: $blueColor;
+    color: map-get($colores, $key: azul );
     font-size: 20px;
 }
 .font--size12 {
     font-size: 12px;
 }
 
-
-.uppercase {
-    text-transform: uppercase;
-}
-
 .btn {
     transition-delay: 100ms;
     margin: 5px;
     &:hover {
-        background-color: $blueColor;
+        background-color: map-get($colores, $key: azul );
     }
 }
 
 .card-body ul li a {
     text-decoration: none;
-    color: white;
+    color: map-get($colores, $key: blanco );
     &:hover {
-        color: white;
+        color: map-get($colores, $key: blanco );
     }
 }
 

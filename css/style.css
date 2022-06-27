@@ -1,3 +1,23 @@
+/* Variables Colores */
+/* Mapa Colores */
+.display--flex, #visionimg, #misionimg, #mision, #vision, .bi-wifi, .bi-telephone-inbound, .bi-badge-4k {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.uppercase, .mision__titulo--uppercase_color_size,
+.vision__titulo_uppercase_color_size,
+.planes__titulo--uppercase_color_size, .titulo--animado {
+  text-transform: uppercase;
+}
+
 @font-face {
   font-family: Mohr;
   src: url("../assets/fonts/Mohr.ttf");
@@ -7,29 +27,6 @@
   padding: 0;
   margin: 0;
   font-family: Mohr;
-}
-
-.color {
-  -webkit-animation: color 1s alternate infinite;
-          animation: color 1s alternate infinite;
-}
-
-@-webkit-keyframes color {
-  form {
-    color: #162a83;
-  }
-  to {
-    color: #f4b802;
-  }
-}
-
-@keyframes color {
-  form {
-    color: #162a83;
-  }
-  to {
-    color: #f4b802;
-  }
 }
 
 body {
@@ -89,10 +86,9 @@ nav ul li a:hover {
 .mision__titulo--uppercase_color_size,
 .vision__titulo_uppercase_color_size,
 .planes__titulo--uppercase_color_size {
-  text-transform: uppercase;
+  text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
-  text-align: center;
   margin-bottom: 25px;
   color: #162a83;
 }
@@ -153,24 +149,20 @@ footer {
   padding: 0;
 }
 
-#pie__izq, #pie__centro, #pie__der, ul li {
-  color: #626262;
-}
-
-#pie__izq, #pie__centro, #pie__der, ul li a {
+#pie__izq a, #pie__centro a, #pie__der a, ul a {
   text-decoration: none;
   color: #162a83;
 }
 
-#pie__izq, #pie__centro, #pie__der, ul li a:hover {
+#pie__izq a:hover, #pie__centro a:hover, #pie__der a:hover, ul a:hover {
   color: white;
 }
 
 .empresa--parrafo {
-  margin-top: 10px;
   text-align: justify;
+  font-size: 20px;
+  margin-top: 10px;
   padding: 10px;
-  font-size: 18px;
   font-weight: bolder;
 }
 
@@ -178,23 +170,23 @@ footer {
   margin-top: 30px;
 }
 
-#mb50 .card-title {
+.card-title {
   color: #162a83;
 }
 
 .cobertura--titulo, .principal__contacto--titulo {
-  text-align: center;
   margin-top: 10px;
-  color: #162a83;
   padding: 15px;
+  text-align: center;
+  color: #162a83;
   font-weight: bolder;
 }
 
 .cobertura__pie--parrafo {
-  color: #626262;
-  text-align: center;
   margin-top: 10px;
   padding: 15px;
+  color: #626262;
+  text-align: center;
   font-weight: bolder;
 }
 
@@ -204,7 +196,6 @@ footer {
 }
 
 .titulo--animado {
-  text-transform: uppercase;
   background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
   background-size: auto auto;
   background-clip: border-box;
@@ -229,45 +220,15 @@ footer {
 }
 
 #mision, #vision {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#visionimg, #misionimg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .bi-wifi, .bi-telephone-inbound, .bi-badge-4k {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-size: 72px;
   color: #162a83;
 }
@@ -279,10 +240,6 @@ footer {
 
 .font--size12 {
   font-size: 12px;
-}
-
-.uppercase {
-  text-transform: uppercase;
 }
 
 .btn {

@@ -1,0 +1,9 @@
+@mixin fuente($algin, $tamanio) {
+    text-align: $algin;
+    font-size: $tamanio;
+}
+
+@mixin marginTopPadd($mTop, $padd) {
+    margin-top: $mTop;
+    padding: $padd;
+}

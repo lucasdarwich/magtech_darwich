@@ -1,3 +1,14 @@
+/* Variables Colores */
+
 $grayColor: rgb(98, 98, 98);
 $blueColor: rgb(22, 42, 131);
 $whiteColor: rgb(255,255,255);
+
+
+/* Mapa Colores */
+
+$colores: (
+    gris: $grayColor,
+    azul: $blueColor, 
+    blanco: $whiteColor,
+)
