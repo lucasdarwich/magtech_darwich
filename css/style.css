@@ -150,6 +150,7 @@ footer {
 #pie__izq, #pie__centro, #pie__der, ul {
   list-style-type: none;
   text-align: center;
+  padding: 0;
 }
 
 #pie__izq, #pie__centro, #pie__der, ul li {
@@ -173,7 +174,7 @@ footer {
   font-weight: bolder;
 }
 
-#planesInternet {
+#planesInternet, #planesTV {
   margin-top: 30px;
 }
 
@@ -269,6 +270,38 @@ footer {
           align-items: center;
   font-size: 72px;
   color: #162a83;
+}
+
+.bi-router, .bi-box-arrow-in-up, .bi-box-arrow-in-down, .bi-telephone, .bi-tv, .bi-modem, .bi-ui-checks-grid, .bi-tv {
+  color: #162a83;
+  font-size: 20px;
+}
+
+.font--size12 {
+  font-size: 12px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+  margin: 5px;
+}
+
+.btn:hover {
+  background-color: #162a83;
+}
+
+.card-body ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.card-body ul li a:hover {
+  color: white;
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
